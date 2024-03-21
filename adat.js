@@ -34,6 +34,7 @@ const AL=document.getElementById("al")
 let txt ='<div class="flex-container">'
 let cim = '<img src="al-bundy-2.jpg" alt="">'
 AL.innerHTML=cim
+
 const CIPOKelem = document.getElementById("cipo")
 let randomDecimal
 for (let index = 0; index<CIPOLISTA.length;index++){
@@ -46,7 +47,7 @@ const randomInRange = randomDecimal * 5;
 const randomNumber = Math.floor(randomInRange) + 1;
 if (randomNumber === 1){
     cim = '<h1> <div class="Csanel">CSAKMOSTCSAKNEKED EKSZLUZIV GUCCCSIVUTTON CSHÁNEL MEZŐGAZDASÁGI TORNACIPŐ</div></h1>'
-    cim += '<img src="_12b62d57-fd66-4880-a9d7-f651b58e91f0.jpeg" alt=""></img>'
+    cim += '<img src="gumicsizma.jpeg" alt=""></img>'
     AL.innerHTML=cim
 }
 CIPOKelem.innerHTML += txt
@@ -73,3 +74,10 @@ function osszegzes(lista){
     console.log(vegosszeg, "ft")
 }
 osszegzes(CIPOLISTA)
+const buttonElem = document.querySelectorAll("button")[0]
+buttonElem.addEventListener("click",katt)
+console.log(buttonElem)
+function katt(){
+    alert("ááááááááááááááááááá")
+    
+}
